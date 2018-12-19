@@ -10,12 +10,16 @@ namespace Practice_Class_Project
     {
         static void Main(string[] args)
         {
-            // The code provided will print ‘Hello World’ to the console.
-            // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
-            Console.WriteLine("Hello World!");
-            Console.ReadKey();
+            var album = new Album("Dangerous", "Michael Jackson");
+            var book = new Book("Ender's Game", "Orson Scott Card");
+            var movie = new Movie("Transformers", "Michael Bay");
 
-            // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
+
+            Console.WriteLine("The album " + album.Title + " was created by " + album.Artist);
+            Console.WriteLine("The book " + book.Title + " was written by " + book.Author);
+            Console.WriteLine("The movie " + movie.Title + " was directed by " + movie.Director);
+            Console.WriteLine("Press any key to continue: ");
+            Console.ReadKey();
         }
     }
 }
